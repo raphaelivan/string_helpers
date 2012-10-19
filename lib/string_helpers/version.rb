@@ -1,0 +1,3 @@
+module StringHelpers
+  VERSION = "0.0.1"
+end
