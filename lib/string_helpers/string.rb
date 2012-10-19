@@ -6,11 +6,10 @@ String.class_eval do
     self.gsub(" ", "-")
   end
   
-  def fill characters
+  def fill chars = 5
     length = self.length
-    chars  = characters - 1 
-    return self[0..chars] << "..." if length > characters
-    self << "\s" * (characters - length) if length < characters    
+    return self[0..(chars - 1)] << "..." if length > chars
+    self << "\s" * (chars - length)
   end
   
   def apostrophe
