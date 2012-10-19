@@ -15,22 +15,28 @@ gem string_helpers
 ## Usage
 Slug 
 ```sh
-"Jhon Doe".slug #=> "Jhon-Doe"
+"Jhon Doe".slug! #=> "Jhon-Doe"
+```
+Sluged?
+```sh
+"Jhon Doe".sluged? #=> false
+"Jhon-Doe".sluged? #=> true
+"Jhon---".sluged?  #=> true
+"Jhon".sluged?     #=> true
 ```
 
 Fill
 ```sh
-"Jhon Doe".slug
-=> "Jhon Doe".fill 10 #=> "Jhon Doe  "
+"Jhon Doe".fill!(10) #=> "Jhon Doe  "
 
-"Jhon Doe".fill 5 #=> "Jhon..."
+"Jhon Doe".fill(5) #=> "Jhon..."
 ```
 
 Apostrophe's 
 ```sh
-"Jhon Doe".apostrophe #=> "Jhon Doe’s"
+"Jhon Doe".apostrophe! #=> "Jhon Doe’s"
 
-"Marrys".apostrophe #=> "Marrys’"
+"Marrys".apostrophe! #=> "Marrys’"
 ```
 
 Camelize
