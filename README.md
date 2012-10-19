@@ -23,7 +23,7 @@ Fill
 "Jhon Doe".slug
 => "Jhon Doe".fill 10 #=> "Jhon Doe  "
 
-"Jhon Doe".fill 5 #=> "Jhon ..."
+"Jhon Doe".fill 5 #=> "Jhon..."
 ```
 
 Apostrophe's 
