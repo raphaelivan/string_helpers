@@ -5,8 +5,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Raphael Ivan"]
   gem.email         = ["raphaivan@gmail.com"]
   gem.date          = %q{2012-10-18}
-  gem.description   = %q{String helpers}
-  gem.summary       = %q{The libary extend some methods to String class}
+  gem.description   = %q{Extend some methods to String class.}
+  gem.summary       = %q{The libary extend some instance methods to String class.}
   gem.homepage      = "https://github.com/RaphaelIvan/string_helpers"
 
   # gem.files         = `git ls-files`.split($\)
