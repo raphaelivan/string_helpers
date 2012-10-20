@@ -9,18 +9,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{The libary extend some instance methods to String class.}
   gem.homepage      = "https://github.com/RaphaelIvan/string_helpers"
 
-  # gem.files         = `git ls-files`.split($\)
-  gem.files = [
-       ".gitignore",
-       "Rakefile",
-       "README.md",
-       "lib/string_helpers/version.rb",
-       "lib/string_helpers/string.rb",
-       "lib/string_helpers.rb",
-       "test/test_string_helpers.rb"
-    ]
-
-  gem.test_files    = ["test/test_string_helpers.rb"]
+  gem.files         = `git ls-files`.split($\)
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "string_helpers"
   gem.require_paths = ["lib"]
   gem.version       = StringHelpers::VERSION
