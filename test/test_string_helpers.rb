@@ -9,9 +9,9 @@ class StringHelpersTest < Test::Unit::TestCase
       assert_equal "Jhon-Doe", "Jhon Doe".slug!
   end
   
-  def test_string_slug?
+  def test_string_slugged?
     string = "Jhon Doe".slug!
-    assert_equal true, string.sluged?
+    assert_equal true, string.slugged?
   end
   
   def test_string_fill!
@@ -30,5 +30,13 @@ class StringHelpersTest < Test::Unit::TestCase
   def test_string_apotrophe_with_s!
     word  = "Marry#{APOSTROPHE_VALIDATE}#{APOSTROPHE_CHAR}"
     assert_equal word, "Marry#{APOSTROPHE_VALIDATE}".apostrophe!
+  end
+
+  def test_string_blank?
+    assert_equal false, " a ".blank?
+  end
+  
+  def test_string_blank!
+    assert_equal true, " a".blank!.blank?
   end
 end

@@ -17,12 +17,12 @@ Slug
 ```sh
 "Jhon Doe".slug! #=> "Jhon-Doe"
 ```
-Sluged?
+Slugged?
 ```sh
-"Jhon Doe".sluged? #=> false
-"Jhon-Doe".sluged? #=> true
-"Jhon---".sluged?  #=> true
-"Jhon".sluged?     #=> true
+"Jhon Doe".slugged? #=> false
+"Jhon-Doe".slugged? #=> true
+"Jhon---".slugged?  #=> true
+"Jhon".slugged?     #=> true
 ```
 
 Fill
@@ -37,6 +37,22 @@ Apostrophe's
 "Jhon Doe".apostrophe! #=> "Jhon Doe’s"
 
 "Marrys".apostrophe! #=> "Marrys’"
+```
+
+Camelize
+```sh
+"jhon doe and marry".camelize! #=> "JhonDoeAndMarry"
+```
+
+Blank?
+```sh
+" ".blank? #=> true
+" a".blank? #=> false
+```
+
+Blank!
+```sh
+" a".blank! #=> ""
 ```
 
 Camelize
